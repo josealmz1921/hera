@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .header {
+        @apply flex justify-between items-center flex-row py-4 px-5;
+        @apply border-b-8 border-[#4E7970] bg-[#748C7C]
+    }
+
+    .buttonHeader {
+        @apply flex justify-center;
+        @apply mx-2;
+
+    }
+
+    .iconHeader {
+        @apply w-6 h-6 stroke-white;
+    }
+
+    .linkHeader {
+        @apply mx-2 text-white;
+    }
+
+    .imageHeader {
+        @apply rounded-[50%] overflow-hidden;
+    }
+
+    .shadowCard {
+        -webkit-box-shadow: 12px 14px 5px 0px rgba(224,224,224,1);
+        -moz-box-shadow: 12px 14px 5px 0px rgba(224,224,224,1);
+        box-shadow: 12px 14px 5px 0px rgba(224,224,224,1);
+    }
+
+}

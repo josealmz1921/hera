@@ -1,0 +1,210 @@
+.carrousel_container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.principal_image {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-color: #f2f2f2;
+    overflow: hidden;
+    cursor: grabbing;
+}
+
+.principal_image .img_container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+    max-height: 100%;
+    /* .container_images {} */
+}
+
+.principal_image .img_container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    width: 100%;
+    max-height: 100%;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+.principal_image .img_container div img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+.btn_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    left: 2rem;
+    z-index: 9;
+}
+
+.btn_left button {
+    height: 2.5rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    background-color: #c7bbb9;
+    color: #ffffff;
+    border: none;
+}
+
+.btn_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    right: 2rem;
+    z-index: 9;
+    top: 0;
+}
+
+.btn_right button {
+    height: 2.5rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    background-color: #c7bbb9;
+    color: #ffffff;
+    border: none;
+}
+
+.iconButtons{
+    width: 2rem;
+    height: 2rem;
+}
+
+.images {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    overflow-x: auto;
+    height: 20vh;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+.images::-webkit-scrollbar {
+    height: 10px;
+}
+
+.images ::-webkit-scrollbar-thumb:hover {
+    background: #0f2c70;
+}
+
+.images::-webkit-scrollbar-thumb {
+    background: #111e3d;
+    border-radius: .2rem;
+}
+
+.images::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px grey;
+    border-radius: .2rem;
+}
+
+.images div {
+    display: flex;
+    justify-content: center;
+    max-width: 10%;
+    min-width: 10%;
+    width: 10%;
+    height: 100%;
+    background-color: #efeded;
+    padding: 1rem;
+    transition: ease all .4s;
+}
+
+.images div img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 100%;
+    transition: ease all .4s;
+    cursor: pointer;
+}
+
+.images div img :hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width:1550px) {
+    .images div {
+        display: flex;
+        justify-content: center;
+        max-width: 20%;
+        min-width: 20%;
+        width: 20%;
+        height: 100%;
+        background-color: #efeded;
+        padding: 1rem;
+    }
+}
+
+@media (max-width:768px) {
+    .images div {
+        display: flex;
+        justify-content: center;
+        max-width: 25%;
+        min-width: 25%;
+        width: 25%;
+        height: 100%;
+        background-color: #efeded;
+        padding: 1rem;
+    }
+}
+
+@media (max-width:550px) {
+    .images {
+        height: 15vh;
+    }
+
+    .images div {
+        display: flex;
+        justify-content: center;
+        max-width: 33.33%;
+        min-width: 33.33%;
+        width: 33.33%;
+        height: 100%;
+        background-color: #efeded;
+        padding: 1rem;
+    }
+}
+
+@media (max-width:385px) {
+
+    .principal_image {
+        height: 60vh;
+    }
+
+    .images div {
+        display: flex;
+        justify-content: center;
+        max-width: 50%;
+        min-width: 50%;
+        width: 50%;
+        height: 100%;
+        background-color: #efeded;
+        padding: 1rem;
+    }
+}
